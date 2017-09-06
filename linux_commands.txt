@@ -1,0 +1,6 @@
+unset EDITOR  #erase an environment variable EDITOR
+EDITOR='xemacs'   #set an environment variable
+export EDITOR=xemacs #export the variable to the os
+
+MYDIR=`dirname /usr/local/share/doc/foo/foo.txt`
+echo this is my directory: ${MYDIR}
