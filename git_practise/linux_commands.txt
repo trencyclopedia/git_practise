@@ -1,0 +1,15 @@
+#!/bin/bash
+
+ #The very first line of a script should tell the system which interpreter should be used on this file. It is important that this is the very first line of the script. It is also important that there are no spaces. The first two characters #! (the shebang) tell the system that directly after it will be a path to the interpreter to be used. If we don't know where our interpreter is located then we may use a program called which to find out.
+
+echo this is my first bash script:
+echo $PATH
+
+
+
+unset EDITOR  #erase an environment variable EDITOR
+EDITOR='xemacs'   #set an environment variable
+export EDITOR=xemacs #export the variable to the os
+
+MYDIR=`dirname /usr/local/share/doc/foo/foo.txt`
+echo this is my directory: ${MYDIR}
